@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.heart {
+    font-size: 1.3rem;
+    position: fixed;
+    top: -5vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
