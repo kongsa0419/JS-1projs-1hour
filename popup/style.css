@@ -24,16 +24,38 @@ button {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
-
-    display: flex;
+    /* 가운데 정렬 */
+    display: none;
     justify-content: center;
     align-items: center;
 }
+.popup-container.active {
+    display: flex;
+}
 .popup {
     background-color: white;
-    padding: 2rem;
+    padding: 1rem;
     width: fit-content;
+    height: fit-content;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    position: relative;
+    position: absolute;
+}
+.popup .close {
+    top: 3px;
+    right: 5px;
+    padding: 0.3rem 0.5rem;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: right;
+}
+.popup .popup-title {
+    top: 0px;
+    left: 0px;
+    font-size: 18px;
+    padding-right: 10px;
+    padding: 3px 15px 3px 8px;
+}
+#popup-message {
+    margin-block-start: 1.5em;
 }
